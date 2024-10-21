@@ -109,10 +109,19 @@ li{
 }
 .img2{
     border: solid 3px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
+.img3{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.img4{
+    text-align: center;
+    width: 600px ;
+    height: 600px;
+}
 .link{
     color:white;
 }
@@ -122,17 +131,33 @@ li{
 }
 
 img{
-    margin: c;
+    margin: 5px;
 }
 
 .textred
 {
     color: red;
 }
+
 .display{
     display: inline-block;
     text-align: center;
 }
+.display2{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    border: solid;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
 p :hover{
     color: rgb(51, 71, 229);
+}
+.c1 :hover {
+content: url(./image/logo\ 3.webp);
 }
