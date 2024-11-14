@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+     /* fonts */
+     @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+
+     :root {
+  /* Color */ 
+  --white-color: #fff;
+  --dark-color: #35424c;
+  --primary-color: #359697;
+  --secondary-color: #223a4c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
+  --black-color: #010d36;
+
+  /* Font Size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+
+/* Stylings for whole site */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+ cursor: pointer;
+ border: none;
+ background: none;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Navbar styling*/
+
+.titlebar {
+position: fixed;
+width: 100%;
+z-index: 5;
+background: var(--primary-color);
+}
+
+.titlebar .navbar {
+display: flex;
+padding: 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+color: var(--white-color);
+font-size: var(--font-size-xl);
+font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+display: flex;
+gap: 10px;
+font-family: var(--font-size-m);
+}
+
+.navbar .nav-menu .nav-link {
+padding: 10px 18px;
+color: var(--white-color);
+font-size: var(--font-size-m);
+border-radius: var(--border-radius-m);
+transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+color: var(--primary-color);
+background: var(--secondary-color);
+
+}
+
+/* hero */
+
+.hero {
+      width: 100%;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #welcome {
+      filter: brightness(80%);
+      background-position: bottom;
+      background-attachment: fixed;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      flex-wrap: wrap;
+    }
+
+    .hero h1 {
+      flex-wrap: wrap;
+      position: absolute;
+      color: #e6d67d;
+      margin-top: 8%;
+      left: 40px;
+      font-size: 70px;
+    }
+
+    .hero h2 {
+      position: absolute;
+      color: whitesmoke;
+      margin-top: 13%;
+      left: 55px;
+      max-width: 29%;
+    }
+
+    .hero p {
+      position: absolute;
+      color: whitesmoke;
+      margin-top: 17.3%;
+      left: 59px;
+      text-align: justify;
+      margin-right: 50px;
+      max-width: 25%;
+    }
+
+    .hero h3 {
+      position: absolute;
+      color: whitesmoke;
+      margin-top: 19.5%;
+      left: 59px;
+      text-align: justify;
+      margin-right: 50px;
+    }
+
+    .hero button {
+      padding: 5px;
+      border: solid 2px whitesmoke;
+      border-radius: 5px;
+      background: none;
+      position: absolute;
+      color: whitesmoke;
+      margin-top: 28%;
+      left: 59px;
+      text-align: center;
+      margin-right: 50px;
+      font-size: large;
+      font-weight: 600;
+      width: 10%;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .hero button:hover {
+      padding: 5px;
+      border: solid 2px white;
+      border-radius: 5px;
+      background: none;
+      background-color: whitesmoke;
+      position: absolute;
+      color: #343a40;
+      margin-top: 28%;
+      left: 59px;
+      text-align: center;
+      margin-right: 50px;
+      font-size: large;
+      cursor: pointer;
+    }
+
+    /* feature */
+
+    .feature {
+      width: 100%;
+      height: 865px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    #video {
+      position: relative;
+      margin-left: 5.5%;
+      margin-top: 35px;
+      display: block;
+      width: 88%;
+      height: 650px;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    .feature-title {
+      position: absolute;
+      top: 6%;
+      left: 9.9%;
+      color: #e6d67d;
+      font-size: 35px;
+      font-weight: 800;
+      font-family: Arial, sans-serif;
+    }
+    
+    #but {
+      align-items: center;
+      position: absolute;
+      border: goldenrod solid 3px;
+      border-radius: 5px;
+      background-color: goldenrod;
+      color: black;
+      padding: 2px 5px;
+      font-size: large;
+      text-align: center;
+      width: 9%;
+      top: 67%;
+      left: 9%;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    #but:hover {
+      align-items: center;
+      position: absolute;
+      border: #343a40 solid 3px;
+      border-radius: 5px;
+      background-color: #343a40;
+      color: whitesmoke;
+      padding: 2px 5px;
+      font-size: large;
+      text-align: center;
+      width: 9%;
+      top: 66%;
+      left: 9%;
+      cursor: pointer;
+    }
+
+    .category {
+      display: inline-flex;
+      justify-content: space-between;
+      margin-top: 2%;
+    }
+
+
+    </style>
+</head>
+<div class="titlebar">
+  <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+          <h2 class="logo-text">「 ✦ Genshin Impact ✦ 」</h2>
+      </a>
+      <ul class="nav-menu">
+          <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+              <a href="About.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+              <a href="Characters.html" class="nav-link">Characters</a>
+          </li> 
+          <li class="nav-item">
+              <a href="Weapons.html" class="nav-link">Weapons</a>
+          </li>
+          <li class="nav-item">
+              <a href="World.html" class="nav-link">The World</a>
+          </li>
+      </ul>
+  </nav>
+ </div>
+ <hr>
+ <div class="bluefade"></div>
+  <div class="hero">
+    <img src="image/welcome-page.jpg" alt="welcome" id="welcome">
+    <h1>WELCOME</h1>
+    <h2 class="kanit-medium-italic">
+      Unleash Your Elemental Adventure: Dive into the Magic of Teyvat!
+    </h2>
+    <p class="kanit-medium">
+      Welcome to the enchanting world of Teyvat, where adventure awaits around every corner! In Genshin Impact, you’ll embark on an epic journey as the Traveler, a mysterious character from another world. With a vibrant cast of heroes, each wielding elemental powers, you'll explore lush landscapes, uncover ancient secrets, and battle formidable foes.
+    </p>
+  
+    <button onclick="document.location='about.html'">Learn more</button>
+  </div>
+  <div class="feature">
+    <div id="video-background" class="gradient-background">
+      <video id="video" autoplay loop muted>
+        <source src="image/trailer.mp4" type="video/mp4">
+      </video>
+      <h2 class="feature-title">Trailer</h2>
+    
+      <button id="but" class="kanit-medium" onclick="document.location='About.html'">About</button>
+</html>
